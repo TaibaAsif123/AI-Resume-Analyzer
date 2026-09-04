@@ -100,7 +100,7 @@ def analyze_resume(resume_text, job_description):
     Returns None if the call or parsing fails.
     """
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-3.6-flash")
 
         prompt = _build_prompt(resume_text, job_description)
 
